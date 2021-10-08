@@ -1,20 +1,14 @@
-:root
-{
-font-family:'Montserrat Alternates', sans-serif;
-}
-
-
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 body {
-    font-family:'Montserrat Alternates', sans-serif;
-    background: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    float: right;
 }
 
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
@@ -22,36 +16,53 @@ body {
     width: 300px;
     height: 100vh;
     min-height: 800px;
-    background: #333;
+    background: rgb(100, 100, 100);
     position: fixed;
-    top: 0;
-    left: -300px;
-    border-right: 2px dashed #15ff00;
+    top: 0px;
+    left: 0px;
+    border-right: 1px dashed #00bb00;
     z-index: 5;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: center;
+    color: black;
 }
 
 /************************ HOME SECTION **********************/
 .accueil {
-    background: url(ressources/accueil.jpg);
+    background-image: url(/images/backgroundimage.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     height: 100vh;
     min-height: 900px;
-    width: calc(100% - 300px);
+    width: calc(100% - 290px);
     margin-left: auto;
     position: relative;
 }
 h1 {
     font-size: 90px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 0 60px;
     padding-top: 210px;
 }
+
+h2 {
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 60px;
+    padding-top: 210px;
+}
+
 .txt-animation {
-    font-size: 30px;
+    font-size: 40px;
     margin: 10px 0 10px 60px;
+    display: flex
+
 }
 .btn-acc {
     display: inline-flex;
@@ -96,14 +107,14 @@ h1 {
     border: 2px solid #333;
 }
 .icone-medias {
-    width: 50px;
+    width: 30px;
 }
 .btn-rond {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    bottom: 20px;
-    left: 60px;
+    bottom: -100px;
+    left: 200px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -121,3 +132,7 @@ h1 {
 .logo-btn-rond-acc {
     width: 35px;
 }
+
+
+
+
