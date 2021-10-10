@@ -11,50 +11,52 @@
 
 <!-- Navigation verticale -->
     <nav class="nav-gauche">
-        <div class="blocs-menu">
-            <div class="cercle-portrait">
-                <img src="images/photoo.png" alt="portrait img">
+        <div class="blocs-photo">
+            <div class="portrait">
+                <img src="images/iconimage.png" alt="portrait img" width=250px>
             </div>
         </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#accueil">
-                    HOME
-                </a>
-            </span>
+        <div class="bloc-items">
+            <div class="blocs-item">
+                <span class="nav-menu-item">
+                    <a href="#accueil">
+                        HOME
+                    </a>
+                </span>
+            </div>
+            <div class="blocs-item">
+                <span class="nav-menu-item">
+                    <a href="#pres">
+                        ABOUT
+                    </a>
+                </span>
+            </div>
+            <div class="blocs-item">
+                <span class="nav-menu-item">
+                    <a href="#port">
+                       PROJECTS
+                    </a>
+                </span>
+            </div>
+            <div class="blocs-item">
+                <span class="nav-menu-item">
+                    <a href="#range">
+                        SKILLS
+                    </a>
+                </span>
+            </div>
+            <div class="blocs-item">
+                <span class="nav-menu-item">
+                    <a href="#contact">
+                        CONTACT
+                    </a>
+                </span>
+            </div>
         </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#pres">
-                    ABOUT
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#port">
-                    MY PROJECTS
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#range">
-                    SKILLS
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
-            <span class="nav-menu-item">
-                <a href="#contact">
-                   CONTACT
-                </a>
-            </span>
-        </div>
-        <div class="blocs-menu">
+        <div class="blocs-contact">
             <div class="logo-cercle">
                 <a href="#contact">
-                    <img src="ressources/contact.svg" alt="logo contact">
+                    <img src="images/contactlogo.png" alt="logo contact" width=200>
                 </a>
             </div>
         </div>
@@ -66,9 +68,10 @@
     <section class="accueil" id="accueil">
         <h1>Welcome to my space</h1>
         <p class="txt-animation"></p>
-        <a href="#" class="btn-acc btn-acc1">Projects</a>
-        <a href="#" class="btn-acc btn-acc2">Experiences</a>
-
+            <div class="boutons-accueil">
+                <a href="#" class="btn-acc1">PROJECTS</a>
+                <a href="#" class="btn-acc2">EXPERIENCES</a>
+            </div>
         <div class="medias">
             <a href="https://github.com" target="blank">
                 <div class="media media1">
@@ -103,43 +106,40 @@
 
 <section class="presentation" id="pres">
 
-    <h2 class="titre-pres">Lorem ipsum dolor sit amet.</h2>
+    <h2 class="titre-pres">ABOUT ME </h2>
 
     <div class="container-presentation">
 
         <div class="fond-forme"></div>
 
         <div class="pres-gauche">
-            <h3>Laborum cumque aliquid ut pariatur, natus maxime.</h3>
+            <h3 classe="pres-bref">I'm a Software developer and a UI/UX interface designer from Rabat, Morocco.</h3>
             <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos quisquam rerum aliquam quasi vitae nisi expedita debitis cupiditate asperiores optio eveniet labore, vel beatae!</p>
+            <img src="images/cliart.png" alt="software icone" class="img-medias">
+            <p class ="ragraf"> I enjoy working on new project and designing the interface to make it visualy appealing. I also love using back-end development technologies to create that automate common tasks or solves common problems.   </p>
             <br>
             <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi facere illum ullam exercitationem praesentium veniam?
-            </p>
+            Apart from that, you'll often see me in the gym or cycling on the road.
+            </p> <br><br>
+            </div>
         </div>
         
         <div class="pres-droite">
+            <p class="current"> My current experiences: </p>
+            <img src="images/cliart2.png" alt="software icone" class="img-medias2">
             <ul class="liste-presentation">
+                <br>
                 <li class="item-liste i1">
-                    <span class="chiffre-style">1.</span>
-                    <p class="txt-liste">UX Design expert</p>
-                </li>
-                <li class="item-liste i2">
-                    <span class="chiffre-style">2.</span>
-                    <p class="txt-liste">Spécialiste UI</p>
+                    <p class="txt-liste">Developper Front-end</p>
                 </li>
                 <li class="item-liste i3">
-                    <span class="chiffre-style">3.</span>
-                    <p class="txt-liste">Développeur Back-end</p>
+                    <p class="txt-liste">Developper Back-end</p>
                 </li>
                 <li class="item-liste i4">
-                    <span class="chiffre-style">4.</span>
-                    <p class="txt-liste">Développeur Front-End</p>
+                    <p class="txt-liste">UI/UX Design for e-commerce websites</p>
                 </li>
                 <li class="item-liste i5">
-                    <span class="chiffre-style">5.</span>
-                    <p class="txt-liste">Développeur Full-Stack</p>
+                    <p class="txt-liste">Enterprise resource planning software solutions</p>
                 </li>
             </ul>
         </div>
@@ -216,14 +216,7 @@
         </div>
 
 
-        <div class="item vague3">
-            <div class="cont-img-port">
-                <img src="ressources/Menus.jpg" alt="img portfolio">
-            </div>
-            <h3>Mon fabuleux projet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolore?</p>
-            <a href="#" class="btn-projets">Discover</a>
-        </div>
+\       </div>
 
 
         <div class="item vague3">

@@ -3,36 +3,96 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior:smooth;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     float: right;
 }
 
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
+
 .nav-gauche {
-    width: 300px;
-    height: 100vh;
-    min-height: 800px;
-    background: rgb(100, 100, 100);
+    width: 260px;
+    min-height: 700px;
+    background: black;
+    position: absolute;
     position: fixed;
     top: 0px;
     left: 0px;
-    border-right: 1px dashed #00bb00;
+    border-right: 1px dashed rgb(255, 255, 255);
     z-index: 5;
     transition: all 0.2s ease-in-out;
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: stretch;
-	align-content: center;
+    flex-direction: column;
+    gap: 27px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
     color: black;
 }
 
+.nav-menu-item :hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 32px;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+   
+}
+
+.boutons-accueil :hover {
+    color: white;
+}
+
+
+.bloc.photo{
+    grid-template-columns: 100px;
+}
+
+.bloc-items{
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: stretch;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 20px 20px;
+}
+
+.blocs-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.bloc-contact{
+    flex-grow: 1;
+}
+
 /************************ HOME SECTION **********************/
+
 .accueil {
     background-image: url(/images/backgroundimage.png);
     background-repeat: no-repeat;
@@ -40,31 +100,83 @@ body {
     background-position: right;
     height: 100vh;
     min-height: 900px;
-    width: calc(100% - 290px);
+    width: calc(100% - 300px + 50px);
     margin-left: auto;
     position: relative;
 }
+
+.presentation{
+    background-color: rgb(243, 243, 243);
+    height: 100vh;
+    min-height: 900px;
+    width: calc(100% - 300px + 50px);
+    position: relative;
+    margin-left: auto;
+    border: 3px solid black;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.ragraf{
+    padding-top: 40px;
+    font-size: 24px;
+    margin: 30px 0 0 0;
+}
+
+.current{
+    text-decoration: underline;
+    padding-top: 20px;
+    font-size: 26px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.pres-gauche{
+    margin-right: 100px;
+    padding-top: 40px;
+    margin-left: 50px;
+    line-height: 1.3;
+    font-size: 24px;
+}
+
+.liste-presentation {
+    padding-top: 40px;
+    margin-left: 50px;
+    list-style-type: circle;
+    text-indent: 30px;
+    line-height: 1.4;
+    font-size: 23px;
+}
+
 h1 {
     font-size: 90px;
     font-family: 'Oswald', sans-serif;
-    margin: 0 60px;
+    margin: 0 100px;
     padding-top: 210px;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Oswald', sans-serif;
-    margin: 0 60px;
-    padding-top: 210px;
+    padding-top: 50px;
+    margin-left: 50px;
+    text-decoration: underline overline;
 }
 
 .txt-animation {
     font-size: 40px;
     margin: 10px 0 10px 60px;
-    display: flex
 
 }
-.btn-acc {
+
+.boutons-accueil{
+    margin: 60px 0 0 50px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+
+.btn-acc1 {
     display: inline-flex;
     width: 200px;
     height: 50px;
@@ -73,24 +185,34 @@ h2 {
     justify-content: center;
     align-items: center;
     color: #f1f1f1;
-    margin: 10px 0 0 0;
-    border-radius: 2px;
-    font-size: 18px;
-}
-.btn-acc1 {
-    margin: 10px 0 0 60px;
-}
-.btn-acc2 {
+    border: 3px solid black;
+    font-weight: 800;
+    color: black;  
     background: transparent;
-    border: 2px solid black;
-    color: black;
-    font-weight: 700;
 }
+
+.btn-acc2 {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    background: transparent;
+    border: 3px solid black;
+    color: black;
+    font-weight: 800;
+}
+
+
 .medias {
     display: flex;
     margin-left: 60px;
     margin-top: 30px;
 }
+
 .media {
     width: 60px;
     height: 60px;
@@ -102,33 +224,50 @@ h2 {
     align-items: center;
     cursor: pointer;
 }
+
 .media2 {
     background: transparent;
     border: 2px solid #333;
 }
+
 .icone-medias {
     width: 30px;
 }
+
+.img-medias{
+    width: 300px;
+    padding-top: 30px;
+    float: left;
+}
+
+.img-medias2{
+    width: 300px;
+    float: right;
+    margin-right: 180px;
+}
+
 .btn-rond {
     width: 100px;
     height: 100px;
     position: absolute;
-    bottom: -100px;
-    left: 200px;
+    bottom: 80px;
+    left: 50%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     box-shadow: 0 0 0 0 #333;
-    background: #333;
+    background: black;
     animation: pulse 1.3s infinite;
 }
+
 @keyframes pulse {
     to {
         box-shadow: 0 0 0 8px rgba(255,255,255,0.01);
     }   
 }
+
 .logo-btn-rond-acc {
     width: 35px;
 }
