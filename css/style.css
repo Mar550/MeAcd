@@ -18,7 +18,6 @@ body {
 
 .nav-gauche {
     width: 250px;
-    min-height: 700px;
     background:#0A2342;
     background-position: right;
     position: absolute;
@@ -99,21 +98,19 @@ a:link {
     background-size: cover;
     background-position: right;
     height: 100vh;
-    min-height: 900px;
     width: calc(100% - 300px + 50px);
     margin-left: auto;
     position: relative;
 }
 
 .presentation{
-    background-color: #FFFDF7;
-    height: 100vh;
+    background-color: #dfdfdf;
     min-height: 900px;
     width: calc(100% - 300px + 50px);
     position: relative;
     margin-left: auto;
     font-family: 'Ubuntu', sans-serif;
-
+    height: 500px;
 }
 
 .ragraf{
@@ -159,8 +156,6 @@ h2 {
     font-family: 'Oswald', sans-serif;
     padding-top: 70px;
     padding-bottom: 20px;
-    margin-left: 50px;
-    text-decoration: underline overline;
     text-align: center;
 }
 
@@ -296,7 +291,6 @@ h2 {
     justify-content: space-around;
     position: relative;
     margin-top: 50px;
-    margin-left: 30px;
     font-size: 28px;
 
 }
@@ -307,9 +301,8 @@ h2 {
 }
 
 .img-medias2{
-    position: absolute;
-    margin-left: -150px;
     width: 340px;
+
 }
 
 
@@ -318,8 +311,9 @@ h2 {
 /* Portfolio */
 
 .portfolio{
-    margin-left: 270px;
-    border: 2px solid #333;
+    margin-left: 250px;
+    background-color: #dfdfdf;
+    height: 1000px;
 
 }
 
@@ -334,7 +328,6 @@ h2 {
 }
 
 .item{
-    border: 3px solid black;
     display: flex;    
     flex-direction: column;    
     align-items: center;
@@ -345,6 +338,10 @@ h2 {
     text-align: center;
 }
 
+.cont-img-port{
+    width: 300px;
+    height: 300px;
+}
 
 .btn-projets{
     font-weight: bold;
@@ -357,12 +354,11 @@ h2 {
 
 .section-contact{
     background-color: #FFFDF7;
-    height: 800px;
+    height: 500px;
 }
 
 .container-form{
     background-color: #FFFDF7;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -370,17 +366,9 @@ h2 {
 
 }
 .form-bloc{
-   
     color: black;
-    margin: 14px;
-    padding: 15px;
-    
-}
-
-.form-groupe{
-    display: flex;
-    flex-direction: row;
-    position: relative;
+    margin: 15px;
+    padding: 15px;  
 }
 
 .form-groupe label{
@@ -391,6 +379,10 @@ h2 {
     width: 800px;
 }
 
+textarea{
+    width: 800px;
+    height: 150px;
+}
 .button-sub{
     background-color: white;
     color: black;
@@ -404,11 +396,17 @@ h2 {
 
 /* EXPERIENCES */
 
+.travail-exp{
+    background-color: #dfdfdf ;
+    height: 700px ;
+}
+
 .cont-exp-travail{
-    margin-left: 270px;
+    margin-left: 250px;
     margin-top: 30px;
     display:grid;
     grid-template-columns: 1fr 3fr;
+    margin-right: 25px;
 
 }
 
@@ -421,6 +419,7 @@ h2 {
 .contenu-bloc{
     justify-content: space-between;
 }
+
 .boule-ico{
     border: 3px solid black;
 
@@ -428,7 +427,7 @@ h2 {
 
 .bloc-bloc {
     margin-top: 20px;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
 }
 
 .titre-section-bloc{
@@ -442,6 +441,9 @@ h2 {
 
 /* SKILLS */
 
+.section-range{
+    height: 600px;
+}
 
 .grille-skill{
     background-color: #FFFDF7;
@@ -450,7 +452,6 @@ h2 {
     justify-content: center;
     align-items: center;
     height: 300px;
-    background-color: #FFFDF7;
     margin-left: 330px;
     font-weight: bold;
     font-size: 22px;
@@ -460,22 +461,20 @@ h2 {
     position: relative;
 }
 
-
 .barre-grises{
     background-color: rgb(211, 211, 211);
-    height: 30px;
-    width: 400px;
+    height: 40px;
+    width: 500px;
     border: 2px solid black;
     border-radius: 15px;
     position: relative;
 }
 
-
 .barre-skill{
     background-color: black;
     position: absolute;
     border-radius: 15px;
-    height: 30px;
+    height: 40px;
     z-index: 10;
 }
 
@@ -504,3 +503,524 @@ h2 {
 
 }
 
+/* MEDIA QUERIES */
+
+/* navigation-bar */
+
+
+
+@media only screen and (max-width: 769px) {
+
+
+    .nav-gauche {
+        width: 200px;
+        background:#0A2342;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-content: center;
+        align-items: center;
+        height: 800px;
+  
+    }
+
+       
+    /* ACCUEIL */
+
+    h1{
+        margin-top: 50px;
+        font-size: 70px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    .accueil{
+        margin-top: -65px;
+        background-position: bottom;
+        height: 800px;
+    }
+
+
+
+    .pres-gauche {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: center;
+        justify-content: center;  
+        height: 700px;
+    }
+    
+    .img-medias {
+        width:50%;
+
+    }
+
+    .medias{
+        display:flex;
+        flex-direction: row;
+        align-content: flex-end;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    
+
+    .boutons-accueil{
+        position:relative;
+        left: 10%;
+        top: 20%;
+        color: #dfdfdf;
+    }
+
+
+    .medias{
+        position: relative;
+        top: 20%;
+        right: 40%
+    }
+
+    .btn-rond{
+        position: relative;
+        top: 7%;
+        left: 76%;
+    }
+
+    .titre-accueil{
+        font-size: 40px;
+        right: 20%;
+    }
+    
+   
+
+    /* ABOUT ME */ 
+
+    .pres-bref{
+        font-size: 22px;
+    }
+
+    /*WHAT I DO*/
+
+    .section-experiences{
+        background-color: #FFFDF7;
+        width: calc(100% - 260px) ;
+        height: 1100px; 
+    
+    }
+    
+    
+    .pres-experiences{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        font-size: 24px;
+        align-content: space-between;
+        justify-content: space-between;
+
+    }
+
+    .img-medias2{
+        size: 200px;
+        margin-left: 150px;
+        margin-bottom: 50px;
+        margin-top: -80px;
+    }
+
+    /*PORTFOLIO*/
+    
+    .portfolio{
+        height: 2500px;
+        background-color: #FFFDF7;
+    }
+
+    .cont-portfolio{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        grid-row-gap: 30px;
+    
+    }
+    
+    .item{
+        display: flex;    
+        flex-direction: column;    
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+    }
+    
+    .item p{
+        text-align: center;
+    }
+    
+    .cont-img-port{
+        size: 150px;
+    }
+
+    .btn-projets{
+        font-weight: bold;
+    }
+    
+    
+
+
+
+    /*GRILLE SKILLS*/
+
+    .section-range{
+        height: 780px;
+        background-color: #dfdfdf;
+        margin-left: -10%;
+    }
+
+    .titre-exp{
+        text-align: center;
+
+    }
+
+    .grille-skill{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #dfdfdf;
+    }
+
+
+    /* EXPERIENCES */
+
+    .travail-exp{
+        background-color: #FFFDF7;
+    }
+
+    .cont-exp-travail{
+      background-color: #FFFDF7;  
+    }
+
+    .bloc-bloc {
+        margin-top: 20px;
+        margin-bottom: 52px;
+    }
+
+
+
+    /* CONTACT */
+
+    .section-contact{
+    margin-left: 20%;
+    background-color: #dfdfdf ;
+
+    }
+
+
+    .form-bloc{
+        color: black;
+        margin: 14px;
+        padding: 15px;
+        
+    }
+    
+    .form-groupe{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 5%;
+        
+    }
+
+    .container-form{
+        background-color: #dfdfdf;
+    }
+    
+    .staytouch{
+        text-align: center;
+    }
+    .form-groupe label{
+        font-size: 30px;
+    }
+    
+    .form-groupe input{
+        width: 600px;
+    }
+
+    textarea{
+        max-width: 600px;
+    }
+
+    .button-sub{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        position: absolute;
+        left: 40%;
+        width: 100px;
+    }
+
+
+
+@media only screen and (min-width: 770px) and (max-width: 1137px)
+{
+    .nav-gauche {
+        width: 200px;
+        background:#0A2342;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-content: center;
+        align-items: center;
+        height: 800px;
+  
+    }
+
+       
+    /* ACCUEIL */
+
+    h1{
+        margin-top: 50px;
+        font-size: 70px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    .accueil{
+        margin-top: -65px;
+        background-position: bottom;
+        height: 800px;
+    }
+
+
+
+    .pres-gauche {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: center;
+        justify-content: center;  
+        height: 700px;
+    }
+    
+    .img-medias {
+        width:50%;
+
+    }
+
+    .medias{
+        display:flex;
+        flex-direction: row;
+        align-content: flex-end;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    
+
+    .boutons-accueil{
+        position:relative;
+        left: 10%;
+        top: 20%;
+        color: #dfdfdf;
+    }
+
+
+    .medias{
+        position: relative;
+        top: 20%;
+        right: 40%
+    }
+
+    .btn-rond{
+        position: relative;
+        top: 7%;
+        left: 76%;
+    }
+
+    .titre-accueil{
+        font-size: 40px;
+        right: 20%;
+    }
+    
+   
+
+    /* ABOUT ME */ 
+
+    .pres-bref{
+        font-size: 22px;
+    }
+
+    /*WHAT I DO*/
+
+    .section-experiences{
+        background-color: #FFFDF7;
+        width: calc(100% - 260px) ;
+        height: 1100px; 
+    
+    }
+    
+    
+    .pres-experiences{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        font-size: 24px;
+        align-content: space-between;
+        justify-content: space-between;
+
+    }
+
+    .img-medias2{
+        size: 200px;
+        margin-left: 150px;
+        margin-bottom: 50px;
+        margin-top: -80px;
+    }
+
+    /*PORTFOLIO*/
+    
+    .portfolio{
+        height: 2500px;
+        background-color: #FFFDF7;
+    }
+
+    .cont-portfolio{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        grid-row-gap: 30px;
+    
+    }
+    
+    .item{
+        display: flex;    
+        flex-direction: column;    
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+    }
+    
+    .item p{
+        text-align: center;
+    }
+    
+    .cont-img-port{
+        size: 150px;
+    }
+
+    .btn-projets{
+        font-weight: bold;
+    }
+    
+    
+
+
+
+    /*GRILLE SKILLS*/
+
+    .section-range{
+        height: 780px;
+        background-color: #dfdfdf;
+        margin-left: -10%;
+    }
+
+    .titre-exp{
+        text-align: center;
+
+    }
+
+    .grille-skill{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #dfdfdf;
+    }
+
+
+    /* EXPERIENCES */
+
+    .travail-exp{
+        background-color: #FFFDF7;
+    }
+
+    .cont-exp-travail{
+      background-color: #FFFDF7;  
+    }
+
+    .bloc-bloc {
+        margin-top: 20px;
+        margin-bottom: 52px;
+    }
+
+
+
+    /* CONTACT */
+
+    .section-contact{
+    margin-left: 20%;
+    background-color: #dfdfdf ;
+
+    }
+
+
+    .form-bloc{
+        color: black;
+        margin: 14px;
+        padding: 15px;
+        
+    }
+    
+    .form-groupe{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 5%;
+        
+    }
+
+    .container-form{
+        background-color: #dfdfdf;
+    }
+    
+    .staytouch{
+        text-align: center;
+    }
+    .form-groupe label{
+        font-size: 30px;
+    }
+    
+    .form-groupe input{
+        width: 600px;
+    }
+
+    textarea{
+        max-width: 600px;
+    }
+
+    .button-sub{
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        position: absolute;
+        left: 40%;
+        width: 100px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
