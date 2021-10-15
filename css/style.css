@@ -36,6 +36,7 @@ body {
     align-content: center;
     align-items: center;
     font-weight: bold;
+    height: 702px;
 }
 
 a:link {
@@ -273,10 +274,8 @@ h2 {
 
 .section-experiences{
     background-color: #FFFDF7;
-    width: calc(100% - 260px) ;
-    margin-left: 250px;   
+    width: 100%;
     height: 600px; 
-
 }
 
 .pers-bref{
@@ -290,6 +289,7 @@ h2 {
     justify-items: center;
     justify-content: space-around;
     position: relative;
+    margin-left: 320px;
     margin-top: 50px;
     font-size: 28px;
 
@@ -302,6 +302,7 @@ h2 {
 
 .img-medias2{
     width: 340px;
+    margin-left: 50px;
 
 }
 
@@ -311,13 +312,13 @@ h2 {
 /* Portfolio */
 
 .portfolio{
-    margin-left: 250px;
     background-color: #dfdfdf;
     height: 1000px;
 
 }
 
 .cont-portfolio{
+    margin-left: 250px;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -504,549 +505,7 @@ textarea{
 
 }
 
-/* MEDIA QUERIES */
 
-/* navigation-bar */
-
-
-
-@media only screen and (max-width: 769px) {
-
-
-    .nav-gauche {
-        width: 200px;
-        background:#0A2342;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        transition: all 0.2s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-content: center;
-        align-items: center;
-        height: 800px;
-  
-    }
-
-       
-    /* ACCUEIL */
-
-    h1{
-        margin-top: 50px;
-        font-size: 70px;
-        font-weight: bold;
-        text-decoration: underline;
-        text-align: left;
-    }
-
-    .accueil{
-        margin-top: -65px;
-        background-position: bottom;
-        height: 800px;
-    }
-
-
-
-    .pres-gauche {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        align-items: center;
-        justify-content: center;  
-        height: 700px;
-    }
-    
-    .img-medias {
-        width:50%;
-
-    }
-
-    .medias{
-        display:flex;
-        flex-direction: row;
-        align-content: flex-end;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
-
-    
-
-    .boutons-accueil{
-        position:relative;
-        left: 10%;
-        top: 20%;
-        color: #dfdfdf;
-    }
-
-
-    .medias{
-        position: relative;
-        top: 20%;
-        right: 40%
-    }
-
-    .btn-rond{
-        position: relative;
-        top: 7%;
-        left: 76%;
-    }
-
-    .titre-accueil{
-        font-size: 40px;
-        right: 20%;
-    }
-    
-   
-
-    /* ABOUT ME */ 
-
-    .pres-bref{
-        font-size: 22px;
-    }
-
-    /*WHAT I DO*/
-
-    .section-experiences{
-        background-color: #FFFDF7;
-        width: calc(100% - 260px) ;
-        height: 1100px; 
-    
-    }
-    
-    
-    .pres-experiences{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
-        font-size: 24px;
-        align-content: space-between;
-        justify-content: space-between;
-
-    }
-
-    .img-medias2{
-        size: 200px;
-        margin-left: 150px;
-        margin-bottom: 50px;
-        margin-top: -80px;
-    }
-
-    /*PORTFOLIO*/
-    
-    .portfolio{
-        height: 2500px;
-        background-color: #FFFDF7;
-    }
-
-    .cont-portfolio{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: auto;
-        grid-row-gap: 30px;
-    
-    }
-    
-    .item{
-        display: flex;    
-        flex-direction: column;    
-        align-items: center;
-        justify-content: center;
-        border: 2px solid black;
-    }
-    
-    .item p{
-        text-align: center;
-    }
-    
-    .cont-img-port{
-        size: 150px;
-    }
-
-    .btn-projets{
-        font-weight: bold;
-    }
-    
-    
-
-
-
-    /*GRILLE SKILLS*/
-
-    .section-range{
-        height: 780px;
-        background-color: #dfdfdf;
-        margin-left: -10%;
-    }
-
-    .titre-exp{
-        text-align: center;
-
-    }
-
-    .grille-skill{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        background-color: #dfdfdf;
-    }
-
-
-    /* EXPERIENCES */
-
-    .travail-exp{
-        background-color: #FFFDF7;
-    }
-
-    .cont-exp-travail{
-      background-color: #FFFDF7;  
-    }
-
-    .bloc-bloc {
-        margin-top: 20px;
-        margin-bottom: 52px;
-    }
-
-
-
-    /* CONTACT */
-
-    .section-contact{
-    margin-left: 20%;
-    background-color: #dfdfdf ;
-
-    }
-
-
-    .form-bloc{
-        color: black;
-        margin: 14px;
-        padding: 15px;
-        
-    }
-    
-    .form-groupe{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        left: 5%;
-        
-    }
-
-    .container-form{
-        background-color: #dfdfdf;
-    }
-    
-    .staytouch{
-        text-align: center;
-    }
-    .form-groupe label{
-        font-size: 30px;
-    }
-    
-    .form-groupe input{
-        width: 600px;
-    }
-
-    textarea{
-        max-width: 600px;
-    }
-
-    .button-sub{
-        background-color: white;
-        color: black;
-        font-weight: bold;
-        position: absolute;
-        left: 40%;
-        width: 100px;
-    }
-
-}
-
-@media only screen and (min-width: 770px) and (max-width: 1118px) {
-
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #FFFDF7;
-    }
-
-    .nav-gauche {
-        width: 200px;
-        background:#0A2342;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        transition: all 0.2s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-content: center;
-        align-items: center;
-        height: 800px;
-  
-    }
-
-       
-    /* ACCUEIL */
-
-    h1{
-        margin-top: 50px;
-        font-size: 70px;
-        font-weight: bold;
-        text-decoration: underline;
-        text-align: left;
-        width: 100%
-    }
-
-    .accueil {
-        position: relative;
-        background-size: cover;
-        margin: 0px;
-        width:120%
-    }
-
-    .pres-gauche {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        align-items: center;
-        justify-content: center;  
-        height: 700px;
-    }
-    
-    .img-medias {
-        width:50%;
-
-    }
-
-    .medias{
-        display:flex;
-        flex-direction: row;
-        align-content: flex-end;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
-
-    
-
-    .boutons-accueil{
-        position:relative;
-        right: 20px;
-        color: #dfdfdf;
-        size: 120%;
-        top: 20px;
-    }
-
-
-    .medias{
-        position: relative;
-        right: 76%;
-        top: 20px;
-    
-    }
-
-    .btn-rond{
-        position: relative;
-        bottom: 30px;
-        left: 30px;
-    }
-
-    .titre-accueil{
-        font-size: 40px;
-        right: 20%;
-    }
-    
-   
-
-    /* ABOUT ME */ 
-
-    .presentation{
-        margin:0;
-        width:100%;
-
-    }
-
-    .pres-bref{
-        font-size: 22px;
-    }
-
-    /*WHAT I DO*/
-
-    .section-experiences{
-        background-color: #FFFDF7;
-        margin: 0px;
-        width: 100%;
-        height: 580px; 
-
-    
-    }
-    
-
-    .pres-experiences{
-
-        margin: 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto;
-
-        justify-items: center;
-        justify-content: space-around;
-        position: relative;
-        margin-top: 50px;
-        font-size: 22px;
-    }
-
-
-    .img-medias2{
-        size: 100px;
-        margin:0
-   
-    }
-
-    /*PORTFOLIO*/
-    
-    .portfolio{
-        margin:0px;
-        width: 100%;
-        height: 1420px;
-        background-color: #FFFDF7;
-    }
-
-    .cont-portfolio{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: auto;
-        grid-row-gap: 30px;
-    
-    }
-    
-    .item{
-        display: flex;    
-        flex-direction: column;    
-        align-items: center;
-        justify-content: center;
-        border: 2px solid black;
-    }
-    
-    .item p{
-        text-align: center;
-    }
-    
-    .cont-img-port{
-        size: 150px;
-    }
-
-    .btn-projets{
-        font-weight: bold;
-    }
-
-
-    /*GRILLE SKILLS*/
-
-    .section-range{
-        height: 780px;
-        background-color: #dfdfdf;
-        margin:0px;
-        width: 100%;
-
-    }
-
-    .titre-exp{
-        text-align: center;
-
-    }
-
-    .grille-skill{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        background-color: #dfdfdf;
-    }
-
-
-    /* EXPERIENCES */
-
-    .travail-exp{
-        margin: 0;
-        width: 100%;
-        background-color: #FFFDF7;
-    }
-
-    .cont-exp-travail{
-      background-color: #FFFDF7;  
-    }
-
-    .bloc-bloc {
-        margin-top: 20px;
-        margin-bottom: 52px;
-    }
-
-    .section-contact{
-        margin:0;
-
-
-    }
-
-
-
-    /* CONTACT */
-
-    .section-contact{
-    margin-left: 20%;
-    background-color: #dfdfdf ;
-
-    }
-
-
-    .form-bloc{
-        color: black;
-        margin: 14px;
-        padding: 15px;
-        
-    }
-    
-    .form-groupe{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        left: 5%;
-        
-    }
-
-    .container-form{
-        background-color: #dfdfdf;
-    }
-    
-    .staytouch{
-        text-align: center;
-    }
-    .form-groupe label{
-        font-size: 30px;
-    }
-    
-    .form-groupe input{
-        width: 600px;
-    }
-
-    textarea{
-        max-width: 600px;
-    }
-
-    .button-sub{
-        background-color: white;
-        background-position-x: center;
-        background-size: cover;
-        color: black;
-        font-weight: bold;
-        position: absolute;
-        left: 40%;
-        width: 100px;
-    }
-}
 
 
 @media screen and (max-width: 575px){
@@ -1118,15 +577,13 @@ textarea{
 
     .titre-port{
         position:relative;
-        left: 25%;
     
 
     }
     .cont-portfolio{
-        position: relative;
-        left: 22%;
-        }
 
+    }
+        
 
 /*SKILLS*/
 
@@ -1448,9 +905,6 @@ textarea{
 }
 
 
-    
-
-
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1572,7 +1026,6 @@ textarea{
         height: 1100px; 
     
     }
-    
     
     .pres-experiences{
         display: grid;
@@ -1752,4 +1205,404 @@ textarea{
 
 
 
- 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+
+       
+    /* ACCUEIL */
+
+    .accueil{
+        height: 970px;
+       
+    }
+
+    .titre-accueil{
+        margin-top: -50px;
+    }
+
+    /* ABOUT ME */ 
+
+    .presentation{
+        height: 1100px;
+    }
+
+    .container-presentation{
+        margin-left: 40px;
+    }
+
+    .ragraf{
+        font-size: 22px;
+    }
+
+
+
+    /*WHAT I DO*/
+
+    .section-experiences{
+        width:100%;
+        height: 1050px;
+        border-bottom: #000;
+    }
+
+    .pres-experiences{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        font-size: 24px;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    .img-medias2{
+        margin-top: -80px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    /*PORTFOLIO*/
+    
+    .portfolio{
+        margin:0px;
+        width: 100%;
+        height: 1350px;
+        background-color: #dfdfdf;
+    }
+
+    .cont-portfolio{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-row-gap: 10px;
+        margin-left: 26%;
+    
+    }
+
+    .titre-port{
+        margin-left: 30%;
+    }
+
+    /*GRILLE SKILLS*/
+
+
+    .section-range{
+        height: 860px;
+    }
+    
+    .titre-exp{
+        margin-left: 20%;
+        margin-bottom: 20px;
+    }
+    .grille-skill{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        margin-left: 40%;
+        font-weight: bold;
+        font-size: 22px;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    
+    .range-cont{
+        position: relative;
+    }
+    
+    .barre-grises{
+        background-color: rgb(211, 211, 211);
+        height: 40px;
+        width: 400px;
+        border: 2px solid black;
+        border-radius: 15px;
+        position: relative;
+        column-gap: 40px;
+    }
+    
+    .barre-skill{
+        background-color: black;
+        position: absolute;
+        border-radius: 15px;
+        height: 40px;
+        z-index: 10;
+    }
+    
+    .b1{
+        width: 360px;
+    }
+    
+    .b2{
+        width: 320px;
+    }
+    
+    .b3{
+        width: 300px;
+    }
+    
+    .b4{
+        width: 240px;
+    }
+    
+    .b5{
+        width: 200px;
+    }
+    
+    .b6{
+        width: 280px;
+    
+    }
+
+
+    /* EXPERIENCES */
+
+    .titre-travail-exp{
+        margin-left: 21%;
+    }
+
+    .barre-verticale{
+        margin-left: 10px;
+    }
+
+    .flex-cont-bloc-exp{
+        margin-left: 10px;
+    }
+
+    /* CONTACT */
+
+    .section-contact{
+        height: 540px;
+    }
+
+    .container-form{
+        margin-left: 30%;
+
+    }
+    .form-bloc{
+        color: black;
+        margin: 14px;
+        padding: 15px;
+        
+    }
+
+    .form-groupe input{
+        width: 400px;
+    }
+
+    textarea{
+        max-width: 400px;
+    }
+
+    .staytouch{
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+
+   /*NAVBAR*/
+
+   .nav-gauche{
+       height: 814px;
+   }
+
+    /*ACCUEIL*/
+
+    .accueil{
+        width: 60%;
+    }
+
+    .btn-rond{
+        margin-top: 15%;
+    }
+
+    /*ABOUT ME */
+
+    .presentation{
+        width: 60%;
+
+
+    }
+
+    /*WHAT I DO*/
+
+    .section-experiences{
+
+    }
+
+    .titreido{
+        margin-left: 40%;
+    }
+
+    .exp-left{
+        margin-left: 500px;
+        
+    }
+
+    .exp-center{
+
+    }
+
+    .img-medias2{
+        width:280px;
+    }
+
+    .exp-right{
+    
+
+    }
+
+
+    /*PROJECTS*/
+
+    .portfolio{
+
+    }
+
+    .titre-port{
+        margin-left: 30%;
+
+    }
+
+    .cont-portfolio{
+        margin-left: 42%;
+        grid-column-gap: 15px;
+
+    }
+
+    /*SKILLS*/
+
+    .section-range{
+     
+    }
+    
+    .titre-exp{
+        margin-left: 40%;
+        margin-bottom: 20px;
+    }
+    .grille-skill{
+        height: 300px;
+        margin-left: 47%;
+        font-weight: bold;
+        font-size: 22px;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    
+    .range-cont{
+        position: relative;
+    }
+    
+    .barre-grises{
+        background-color: rgb(211, 211, 211);
+        height: 40px;
+        width: 400px;
+        border: 2px solid black;
+        border-radius: 15px;
+        position: relative;
+        column-gap: 40px;
+    }
+    
+    .barre-skill{
+        background-color: black;
+        position: absolute;
+        border-radius: 15px;
+        height: 40px;
+        z-index: 10;
+    }
+    
+    .b1{
+        width: 360px;
+    }
+    
+    .b2{
+        width: 320px;
+    }
+    
+    .b3{
+        width: 300px;
+    }
+    
+    .b4{
+        width: 240px;
+    }
+    
+    .b5{
+        width: 200px;
+    }
+    
+    .b6{
+        width: 280px;
+    
+    }
+
+    /*EXPERIENCE*/
+
+    .cont-exp-travail{
+        margin-left: 39%;
+    }
+
+    .titre-travail-exp{
+        margin-left: 30%;
+    }
+
+    /*CONTACT*/
+
+    .section-contact{
+
+    }
+
+    .staytouch{
+        margin-left: 50%;
+    }
+
+    .container-form{
+        margin-left: 40%;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 1400px){
+
+    .btn-rond{
+        margin-top: 12%;
+    }
+
+    .nav-gauche{
+        height: 814px;
+    }
+
+    .titre-port{
+        margin-left: 15%;
+
+    }
+
+
+  
+    .staytouch{
+        margin-left: 15%;
+    }
+
+    .container-form{
+        margin-left: 15%;
+
+    }
+
+    .titreido{
+        margin-left: 20%;
+    }
+
+    .titre-exp{
+        margin-left: 20%;
+
+    }
+
+    .titre-travail-exp{
+        margin-left: 20%;
+    }
+}
