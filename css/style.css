@@ -11,8 +11,9 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    float: right;
     background-color: #FFFDF7;
+    float: right;
+
 }
 
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
@@ -22,7 +23,6 @@ body {
     background:#0A2342;
     background-position: right;
     position: absolute;
-    position: fixed;
     top: 0px;
     left: 0px;
     border-right: 1px dashed black;
@@ -100,18 +100,18 @@ a:link {
     background-size: cover;
     background-position: right;
     height: 100vh;
-    width: calc(100% - 300px + 50px);
-    margin-left: auto;
+    width: 100%;
+    
 }
 
 .presentation{
     background-color: #dfdfdf;
     min-height: 900px;
-    width: calc(100% - 300px + 50px);
+    width: 100%;
     position: relative;
-    margin-left: auto;
     font-family: 'Ubuntu', sans-serif;
     height: 500px;
+
 }
 
 .ragraf{
@@ -131,7 +131,7 @@ a:link {
 .pres-gauche{
     margin-right: 100px;
     padding-top: 40px;
-    margin-left: 50px;
+    margin-left: 300px;
     line-height: 1.3;
     font-size: 24px;
 }
@@ -452,8 +452,8 @@ textarea{
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
-    height: 300px;
     margin-left: 330px;
+    height: 300px;
     font-weight: bold;
     font-size: 22px;
     column-gap: 20px;
@@ -511,33 +511,73 @@ textarea{
 @media screen and (max-width: 575px){
 
 /* ACCUEIL*/
+
+    .body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav-gauche{
+        height: 814px;
+    }
     .accueil{
         position:relative;
         width:100%;
-        left: 31%;
+        background-position: bottom;
+    
+    }
+
+    h1{
+        font-size: 45px;
+        text-align: center;
+        margin-left: 53%;
+    }
+
+    .boutons-accueil{
+        margin-left: 62%;
     }
 
     .medias{
         position: relative;
-        right: 50%;
-        }
+        margin-left: 58%;
+
+    }
+
 /*ABOUT ME*/
 
     .presentation{
-        margin: 0;
         width:100%;
-        left: 31%;
+        background-color: #dfdfdf;
+        height: 1100px;
 
+    }
+
+    .pres-gauche{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 18%;
+
+    }
+    .titre-pres{
+        margin-left: 30%;
+        margin-bottom: -70px;
     }
 
     .pres-bref{
         text-align: center;
     }
 
+    .img-medias{
+        width: 510px;
+    }
+    .container-presentation{
+        margin-left: 22%;
+    }
+
     .btn-rond{
         position: relative;
-        top: -40px;
-        }
+        top: -30px;
+    }
 
     .container-presentation{
 
@@ -545,12 +585,12 @@ textarea{
 
     .pres-gauche .pres-bref{
         margin-top: 80px;
-        font-size: 28px ;
+        font-size: 22px ;
 
     }
 
     .ragraf{
-        font-size: 23px;
+        font-size: 21px;
         text-align: center;
     }
 
@@ -558,50 +598,65 @@ textarea{
 
     .titreido{
         text-align: center;
+        margin-left: 30%;
     }
 
     .section-experiences{
         background-color: #FFFDF7;
-        margin: 0px;
         width: 100%;
-        height: 1100px; 
-        margin-left: 35%;
+        height: 1130px; 
 
+    }
+
+    .pres-experiences { 
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .exp-left{
+        margin-top: 20px;
+    }
+
+    .exp-center{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    .exp-right{
+        margin-top: 40px
     }
 
 /*MY PROJECTS*/
     
     .portfolio{
-        height: 2540px;
+        height: 2450px;
     }
 
-    .titre-port{
-        position:relative;
-    
-
+    .titre-port{        
+        margin-left: 30%;
     }
+
     .cont-portfolio{
-
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
         
 
 /*SKILLS*/
 
     .titre-exp{
-        text-align: center;
-        
-    }
-    .section-range{
-        width:100%;
-        background-color: #dfdfdf;
         margin-left: 30%;
-
     }
+
+    .section-range{
+        height: 760px;
+    }
+
     .grille-skill{
-        margin:0;
-        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 39%;
     }
-
 /*EXPERIENCES*/
 
     .travail-exp{
@@ -617,31 +672,44 @@ textarea{
 
     .titre-travail-exp{
         position: relative;
-        margin-left: 50%;
+        margin-left: 38%;
     }
 
     .barre-verticale{
         position: relative;
-        right: 20%;
+        margin-left: 45%;
     }
 
     .bloc-bloc {
         width: 100%;
         margin-top: 10px;
-        margin-bottom: 60px;
+        margin-bottom: 54px;
         position: relative;
-        right: 9%;
-        font-size: 14;
+        font-size: 12;
     }
 
+    .flex-cont-bloc-exp{
+        margin-left: 10px;
+        width: 55%;
+    }
+
+    .txt-section{
+        font-size: 14px;
+    }
     .section-contact{
-        margin:0;
-        width: 100%;
-        margin-left: 31%;
     }
 
     .container-form{
-        margin-left: -50px;;
+    }
+
+    .form-groupe{
+        width: 10px;
+
+    }
+
+    .staytouch{
+        font-size: 40px;
+        margin-left: 30%;
     }
 
 }
